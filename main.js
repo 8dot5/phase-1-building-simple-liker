@@ -3,8 +3,25 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+document.addEventListener('DOMContentLoaded', () => {
+
+const emptyHearts = document.querySelectorAll('span.like-glyph')
+// const emptyHeartsEventListener = emptyHeart.addEventListener('DOMContentLoaded', () => callbackFn)
+
+emptyHearts.forEach(emptyHeart => emptyHeart.addEventListener('click', (e) => handleLikeFn))
+
+function handleLikeFn(e){
+  console.log(e.target.emptyHeart)
+  mimicServerCall()
+  
+}
+
+  
 
 
+
+
+})
 
 
 //------------------------------------------------------------------------------
